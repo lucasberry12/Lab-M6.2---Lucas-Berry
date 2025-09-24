@@ -39,3 +39,23 @@ h1 {
 }
 
 /* Your CSS below here */
+body {
+  background: url("../img/top-image.png") no-repeat top center;
+  background-size: contain;
+  background-color: white;
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid red;
+}
+
+body {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("../img/top-image.png") no-repeat top center,
+    url("../img/bottom-image.png") no-repeat bottom center;
+  background-size: contain;
+}
