@@ -59,3 +59,10 @@ body {
     url("../img/bottom-image.png") no-repeat bottom center;
   background-size: contain;
 }
+
+h1 {
+  background-image: url("../img/logo.png");
+  /* filter: drop-shadow(3px 3px 10px black); */
+  border-radius: 50%;
+  box-shadow: 4px 4px 13px black;
+}
