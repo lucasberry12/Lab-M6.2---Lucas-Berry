@@ -136,7 +136,7 @@ main {
       display: flex;
       flex-direction: column;
 
-      .radio-options {
+      fieldset {
         text-align: center;
       }
 
