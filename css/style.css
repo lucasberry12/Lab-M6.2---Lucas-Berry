@@ -39,6 +39,16 @@ h1 {
 }
 
 /* Your CSS below here */
+@font-face {
+  font-family: "DauphinPlain";
+  src: url("../fonts/Dauphin.woff") format("woff");
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: url("../img/top-image.png") no-repeat top center;
   background-size: contain;
@@ -65,4 +75,76 @@ h1 {
   /* filter: drop-shadow(3px 3px 10px black); */
   border-radius: 50%;
   box-shadow: 4px 4px 13px black;
+}
+
+.outer-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 85%;
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif;
+
+  .languages {
+    margin: 0;
+
+    span {
+      text-decoration: underline;
+      font-size: 0.8rem;
+    }
+  }
+
+  h2 {
+    font-weight: 400;
+    font-family: "DauphinPlain", Arial, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  blockquote {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+  }
+
+  blockquote + blockquote {
+    font-size: 0.7rem;
+    margin: 0.5rem;
+  }
+
+  .inner-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+
+    h3 {
+      font-weight: 400;
+      font-family: "DauphinPlain", Arial, sans-serif;
+      text-align: left;
+      font-size: 1.3rem;
+      margin: 0;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 0.75rem;
+    }
+
+    .radio-section {
+      display: flex;
+      flex-direction: column;
+
+      .radio-options {
+        text-align: center;
+      }
+
+      button {
+        width: auto;
+        align-self: flex-end;
+        margin: 0.5rem;
+      }
+    }
+  }
 }
