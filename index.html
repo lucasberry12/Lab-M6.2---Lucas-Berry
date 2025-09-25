@@ -129,7 +129,7 @@
                   />lists</label
                 >
               </div>
-              <button id="radioChoice">Display Chosen Option</button>
+              <button onclick="radioAlert()">Display Chosen Option</button>
             </div>
           </div>
         </div>
@@ -146,5 +146,10 @@
         </p>
       </address>
     </article>
+
+    <script type="module" script="js/main.js">
+      import { radioAlert } from "./js/main.js";
+      window.radioAlert = radioAlert;
+    </script>
   </body>
 </html>
